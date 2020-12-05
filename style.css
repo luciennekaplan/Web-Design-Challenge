@@ -3,9 +3,43 @@
     padding: 5px;
     margin: 5px;
     font-weight: 800;
-    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
-.blue {
-    background-color: darkblue
+
+.graybackground {
+  background-color: darkgray;
+}
+
+.mainbox {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: lavenderblush;
+  color: black;
+  font-size: 40px;
+}
+
+.sidebarbox {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    background: lavender;
+    color: black;
+    font-size: 30px;
+}
+
+
+.box-1 {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.box-2 {
+  margin-top: 8%;
+  margin-left: 60%;
+}
+
+.font {
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
