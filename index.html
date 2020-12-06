@@ -10,7 +10,11 @@
 </head>
 
 <body class = largefont style="background-color: lightgrey;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    
+  
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand" href="index.html">Weather Observations</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,36 +29,51 @@
               <a class="nav-link text-light" href="comparison.html">Comparison</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
+              <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Max Temperature</a>
-                <a class="dropdown-item" href="#">Humidity</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Visualizations/Temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="Visualizations/Humidity.html">Humidity</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Cloudiness</a>
-                <a class="dropdown-item" href="#">Wind Speed</a>
+                <a class="dropdown-item" href="Visualizations/Cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="Visualizations/WindSpeed.html">Wind Speed</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
-        <figure class="box mainbox box-1">Weather Observations
-          <hr>
-          <img src="Resources/assets/images/Fig1.png" class="img-fluid">
+        
+      
+      
+      
+      
+      
+      
+      <figure class="box mainbox box-1 border border-dark">Weather Observations
+      <hr>
+      <div class = "container">
+        <div class = "row smallfont"
+          <div class = "col-md-8">
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
+            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
+         </p>
+        </div>
+        </div>
+    </div>
         </figure>
-        <figure class="box sidebarbox box-2">Visualizations
-          <hr>
-          <div class = "container"></div>
+      <figure class="box sidebarbox box-2 border border-dark">Visualizations
+      <hr>
+          <div class = "container">
             <div class = "row smallfont">
              <div class = "col-md text-center">
-              <a href="Visualizations/Temperature.html" target="_blank">
-              <img src = "Resources/assets/images/Fig1.png" class = "img-fluid img-thumbnail thumbnail">
-              </a>
-              <figcaption class="figure-caption text-right">City Latitude vs. Max Temperature</figcaption>
-              <a href="Visualizations/Humidity.html" target="_blank">
-              <img src = "Resources/assets/images/Fig2.png" class = "img-fluid img-thumbnail thumbnail">
-              </a>
+                <a href="Visualizations/Temperature.html" target="_blanvk">
+                  <img src = "Resources/assets/images/Fig1.png" class = "img-fluid img-thumbnail thumbnail">
+                </a>
+                    <figcaption class="figure-caption text-right">City Latitude vs. Max Temperature</figcaption>
+                <a href="Visualizations/Humidity.html" target="_blank">
+                  <img src = "Resources/assets/images/Fig2.png" class = "img-fluid img-thumbnail thumbnail">
+                </a>
               <figcaption class="figure-caption text-right">City Latitude vs. Humidity</figcaption>
              </div>
              <div class = "col-md text-center">
@@ -66,7 +85,7 @@
               <img src = "Resources/assets/images/Fig4.png" class = "img-fluid img-thumbnail thumbnail">
               </a>
               <figcaption class="figure-caption text-right">City Latitude vs. Wind Speed</figcaption>
-             </div>
+            </div>
           </div>
         </div>
       </figure>

@@ -29,12 +29,12 @@
               <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Max Temperature</a>
-                <a class="dropdown-item" href="#">Humidity</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Visualizations/Temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="Visualizations/Humidity.html">Humidity</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Cloudiness</a>
-                <a class="dropdown-item" href="#">Wind Speed</a>
+                <a class="dropdown-item" href="Visualizations/Cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="Visualizations/WindSpeed.html">Wind Speed</a>
               </div>
             </li>
           </ul>
@@ -49,19 +49,27 @@
            <h5>Click on any plot to read analysis</h5>
           </div>
         </div>
-        <figure class="box fullbox text-center">
+        <figure class="box fullbox text-center border border-dark">
         <div class = "row smallfont">
           <div class = "col-md">
-           <img src = "Resources/assets/images/Fig1.png" class = "img-fluid smallphoto top-buffer">
-           <figcaption class="figure-caption text-right">City Latitude vs. Max Temperature</figcaption>
-           <img src = "Resources/assets/images/Fig2.png" class = "img-fluid smallphoto top-buffer">
-           <figcaption class="figure-caption text-right">City Latitude vs. Humidity</figcaption>
+          <a href="Visualizations/Temperature.html" target="_blank">
+            <img src = "Resources/assets/images/Fig1.png" class = "img-fluid smallphoto top-buffer">
+          </a>
+              <figcaption class="figure-caption text-right">City Latitude vs. Max Temperature</figcaption>
+          <a href="Visualizations/Humidity.html" target="_blank">
+             <img src = "Resources/assets/images/Fig2.png" class = "img-fluid smallphoto top-buffer">
+          </a>
+              <figcaption class="figure-caption text-right">City Latitude vs. Humidity</figcaption>
           </div>
           <div class = "col-md">
-           <img src = "Resources/assets/images/Fig3.png" class = "img-fluid smallphoto top-buffer">
-           <figcaption class="figure-caption text-right">City Latitude vs. Cloudiness</figcaption>
-           <img src = "Resources/assets/images/Fig4.png" class = "img-fluid smallphoto top-buffer">
-           <figcaption class="figure-caption text-right">City Latitude vs. Wind Speed</figcaption>
+            <a href="Visualizations/Cloudiness.html" target="_blank">
+              <img src = "Resources/assets/images/Fig3.png" class = "img-fluid smallphoto top-buffer">
+           </a>
+             <figcaption class="figure-caption text-right">City Latitude vs. Cloudiness</figcaption>
+          <a href="Visualizations/WindSpeed.html" target="_blank">
+             <img src = "Resources/assets/images/Fig4.png" class = "img-fluid smallphoto top-buffer">
+          </a>
+              <figcaption class="figure-caption text-right">City Latitude vs. Wind Speed</figcaption>
           </div>
         </figure>
       </div>
