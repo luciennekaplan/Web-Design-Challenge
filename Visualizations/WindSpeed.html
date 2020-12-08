@@ -11,7 +11,7 @@
 
 <body class = largefont style="background-color: lightgrey;">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="index.html">Weather Observations</a>
+        <a class="navbar-brand" href="../index.html">Weather Observations</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,27 +19,64 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="data.html">Data <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-light" href="../data.html">Data <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="comparison.html">Comparison</a>
+              <a class="nav-link text-light" href="../comparison.html">Comparison</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Visualizations/Temperature.html">Max Temperature</a>
-                <a class="dropdown-item" href="Visualizations/Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="Humidity.html">Humidity</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Visualizations/Cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="Visualizations/WindSpeed.html">Wind Speed</a>
-              </div>
+                <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
 
+
+
+      <div class= "container">
+      <figure class="box mainbox box-1 border border-dark">Latitude vs. Wind Speed
+        <hr>
+        
+          </figure>
+        <figure class="box sidebarbox box-2 border border-dark">Visualizations
+        <hr>
+            <div class = "container">
+              <div class = "row smallfont">
+               <div class = "col-md text-center">
+                  <a href="Temperature.html">
+                    <img src = "../Resources/assets/images/Fig1.png" class = "img-fluid img-thumbnail thumbnail">
+                  </a>
+                      <figcaption class="figure-caption text-right">City Latitude vs. Max Temperature</figcaption>
+                  <a href="Humidity.html">
+                    <img src = "../Resources/assets/images/Fig2.png" class = "img-fluid img-thumbnail thumbnail">
+                  </a>
+                <figcaption class="figure-caption text-right">City Latitude vs. Humidity</figcaption>
+               </div>
+               <div class = "col-md text-center">
+                <a href="Cloudiness.html">
+                <img src = "../Resources/assets/images/Fig3.png" class = "img-fluid img-thumbnail thumbnail">
+                </a>
+                <figcaption class="figure-caption text-right">City Latitude vs. Cloudiness</figcaption>
+                <a href="WindSpeed.html">
+                <img src = "../Resources/assets/images/Fig4.png" class = "img-fluid img-thumbnail thumbnail">
+                </a>
+                <figcaption class="figure-caption text-right">City Latitude vs. Wind Speed</figcaption>
+              </div>
+            </div>
+          </div>
+        </figure>
+        </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
