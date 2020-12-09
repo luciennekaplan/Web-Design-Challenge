@@ -4,91 +4,152 @@
 <head>
   <meta charset="UTF-8">
   <title>Web Design Challenge</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="Resources/reset.css">
   <link rel="stylesheet" href="Resources/style.css">
 </head>
 
-<body class = largefont style="background-color: lightgrey;">
-    
-  
+<body class=largefont style="background-color: lightgrey;">
+
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="index.html">Weather Observations</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <a class="navbar-brand" href="index.html">Weather Observations</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="data.html">Data <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Visualizations/Temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="Visualizations/Humidity.html">Humidity</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="Visualizations/Cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="Visualizations/WindSpeed.html">Wind Speed</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ 
+ 
+  <div class="container">
+    <div class="row">
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="data.html">Data <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="comparison.html">Comparison</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Visualizations/Temperature.html">Max Temperature</a>
-                <a class="dropdown-item" href="Visualizations/Humidity.html">Humidity</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Visualizations/Cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="Visualizations/WindSpeed.html">Wind Speed</a>
-              </div>
-            </li>
-          </ul>
+      
+      
+      <div class="col-lg-6 col-md-12">
+        <div class = "top-buffer box titlefont">
+        <h1>Weather Observations</h1>
         </div>
-      </nav>
-        
-      
-      <div class = "container">
-      <figure class="box mainbox box-1 border border-dark">Weather Observations
-      <hr>
-      <div class="row smallfont">
-        <div class="col-md-6">
-          The purpose of this project was to observe how weather changes as you get closer to the equator. 
-          We assembled a dataset of over 500 cities from the OpenWeatherMap API to accomplish this analysis.
-        </div>
-      </div>
-  
-        </figure>
-      
-      
-      
-        <figure class="box sidebarbox box-2 border border-dark">Visualizations
-      <hr>
-          <div class = "container">
-            <div class = "row smallfont">
-             <div class = "col-md text-center">
-                <a href="Visualizations/Temperature.html" target="_blank">
-                  <img src = "Resources/assets/images/Fig1.png" class = "img-fluid img-thumbnail thumbnail">
-                </a>
-                    <figcaption class="figure-caption text-right">City Latitude vs. Max Temperature</figcaption>
-                <a href="Visualizations/Humidity.html" target="_blank">
-                  <img src = "Resources/assets/images/Fig2.png" class = "img-fluid img-thumbnail thumbnail">
-                </a>
-              <figcaption class="figure-caption text-right">City Latitude vs. Humidity</figcaption>
-             </div>
-             <div class = "col-md text-center">
-              <a href="Visualizations/Cloudiness.html" target="_blank">
-              <img src = "Resources/assets/images/Fig3.png" class = "img-fluid img-thumbnail thumbnail">
-              </a>
-              <figcaption class="figure-caption text-right">City Latitude vs. Cloudiness</figcaption>
-              <a href="Visualizations/WindSpeed.html" target="_blank">
-              <img src = "Resources/assets/images/Fig4.png" class = "img-fluid img-thumbnail thumbnail">
-              </a>
-              <figcaption class="figure-caption text-right">City Latitude vs. Wind Speed</figcaption>
+        <hr>
+        <div class="box top-buffer mainbox box-1 mediumfont border border-dark">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <p>The purpose of this project was to observe how weather changes as you get closer to the equator.
+                We assembled a dataset of over 500 cities from the OpenWeatherMap API to accomplish this analysis.
+              </p>
             </div>
           </div>
-      </figure>
-    </div>
+          <div class="col-lg-6 col-md-6">
+            <img src="Resources/assets/images/equator_image.jpg" class="img-fluid">
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site
+                provide the source data and visualizations created as part of the analysis, as well as explanations and
+                descriptions
+                of any trends and correlations witnessed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       
+      
+      
+      
+      
+      <div class="col-lg-6 col-md-12">
+        <div class = "top-buffer box titlefont">
+          <h1>Visualizations</h1>
+        </div>
+        <hr>
+        <div class="box top-buffer sidebarbox box-2 smallfont text-center  border border-dark">
+          <div class = "row">
+            <div class = "col-md-6 col-lg-6">
+              <div class = "top-buffer">
+              <a href="Visualizations/Temperature.html" target="_blank">
+                <img src = "Resources/assets/images/Fig1.png" class = "img-fluid img-thumbnail thumbnail">
+              </a>
+                  <figcaption class="figure-caption text-right">City Latitude vs. Max Temperature</figcaption>
+            </div>
+          </div>
+            
+            <div class = "col-md-6 col-lg-6">
+              <div class = "top-buffer">
+              <a href="Visualizations/Humidity.html" target="_blank">
+                <img src = "Resources/assets/images/Fig2.png" class = "img-fluid img-thumbnail thumbnail">
+              </a>
+            <figcaption class="figure-caption text-right">City Latitude vs. Humidity</figcaption>
+          </div>
+           </div>
+            </div>
+            <hr>
+            <div class = "row">
+              <div class = "col-md-6 col-lg-6">
+                <div class = "top-buffer">
+                <img src = "Resources/assets/images/Fig3.png" class = "img-fluid img-thumbnail thumbnail">
+              </a>
+              <figcaption class="figure-caption text-right">City Latitude vs. Cloudiness</figcaption>
+              </div>
+            </div>
+              <div class = "col-md-6 col-lg-6">
+                <div class = "top-buffer">
+                <a href="Visualizations/WindSpeed.html" target="_blank">
+                  <img src = "Resources/assets/images/Fig4.png" class = "img-fluid img-thumbnail thumbnail">
+                  </a>
+                  <figcaption class="figure-caption text-right">City Latitude vs. Wind Speed</figcaption>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </div>
+
   
-    </body>
-  </html>
+  
+  </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+</html>
