@@ -14,7 +14,7 @@
 .mainbox {
   width: 600px;
   height: 610px;
-  background: lavenderblush;
+  background: lightpink;
   color: black;
   font-size: 40px;
 }
@@ -22,7 +22,7 @@
 .fullbox {
   width: 1000px;
   height: 800px;
-  background: lavenderblush;
+  background: lightpink;
   color: black;
   font-size: 40px;
 }
@@ -30,7 +30,7 @@
 .sidebarbox {
     width: 600px;
     height: 550px;
-    background: lavender;
+    background: mediumaquamarine;
     color: black;
     font-size: 30px;
 }
