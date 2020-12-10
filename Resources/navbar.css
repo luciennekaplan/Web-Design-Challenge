@@ -1,0 +1,8 @@
+@media (max-width: 700px) {
+    .bg-dark {
+        background-color: mediumaquamarine !important;
+      }
+    .navbar-collapse {
+        background-color: mediumaquamarine;
+        } 
+  }

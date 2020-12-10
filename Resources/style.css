@@ -1,11 +1,3 @@
-@media (max-width: 1000px) {
-  .bg-dark {
-      background-color: mediumaquamarine !important;
-    }
-  .navbar-collapse {
-      background-color: mediumaquamarine;
-      } 
-}
 
 .top-buffer { 
     margin-top:8%; 
@@ -20,24 +12,24 @@
   }
 
 .mainbox {
-  width: 600px;
-  height: 610px;
+  width: auto;
+  height: auto;
   background: lightpink;
   color: black;
   font-size: 40px;
 }
 
 .pinkbox {
-  width: 500px;
-  height: 400px;
+  width: auto;
+  height: auto;
   background: lightpink;
   color: black;
   font-size: 20px;
 }
 
 .greenbox {
-  width: 500px;
-  height: 400px;
+  width: auto;
+  height: auto;
   background: mediumaquamarine;
   color: black;
   font-size: 20px;
@@ -45,8 +37,8 @@
 }
 
 .sidebarbox {
-    width: 600px;
-    height: 550px;
+    width: auto;
+    height: auto;
     background: mediumaquamarine;
     color: black;
     font-size: 30px;
@@ -86,12 +78,16 @@
 .smallphoto {
   height: 300px;
   width: 400px;
-  margin-left: 2%;
 }
 
 .thumbnail {
   height: 195px;
   width: 225px;
+}
+
+.headerphoto {
+  height: 200px;
+  width: 300px;
 }
 
 .tablespacing {
